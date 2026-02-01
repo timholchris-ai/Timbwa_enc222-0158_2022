@@ -11,7 +11,7 @@ private:
     double salary;
     
 public:
-    // Parameterized Constructor
+    // Constructor
     Employee(string empName, int empAge, int empServiceYear, double empSalary) {
         name = empName;
         age = empAge;
@@ -56,21 +56,20 @@ public:
 // Main function to test the Employee class
 int main() {
     // Create Employee objects
-    Employee emp1("John Smith", 30, 5, 55000.50);
-    Employee emp2("Sarah Johnson", 42, 15, 85000.75);
+    Employee emp1("Farouk Powell", 30, 5, 55000.50);
+    Employee emp2("Christopher Timbwa", 42, 15, 85000.75);
     
     // Access and display information using getter methods
     cout << "\nUsing Getter Methods:" << endl;
-    cout << "Employee 1: " << emp1.getName() 
-         << ", Age: " << emp1.getAge()
+    cout << "Employee Name: " << emp1.getName() << endl;
+    cout << "Employee Age: " << emp1.getAge()
+    cout << "Employee Service Years: " << emp.getServiceYear() << endl;
          << ", Salary: $" << emp1.getSalary() << endl;
     
-    cout << "Employee 2: " << emp2.getName()
-         << ", Service Years: " << emp2.getServiceYear() << endl;
+    
     
     // Display complete information
     emp1.displayInfo();
-    emp2.displayInfo();
     
     return 0;
 }
