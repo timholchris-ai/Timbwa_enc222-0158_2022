@@ -56,8 +56,7 @@ public:
 // Main function to test the Employee class
 int main() {
     // Create Employee objects
-    Employee emp1("Farouk Powell", 30, 5, 55000.50);
-    Employee emp2("Christopher Timbwa", 42, 15, 85000.75);
+    Employee emp("Christopher Timbwa", 42, 15, 85000.75);
     
     // Access and display information using getter methods
     cout << "\nUsing Getter Methods:" << endl;
